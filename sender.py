@@ -23,7 +23,7 @@ from email.utils import make_msgid, formataddr, parseaddr, formatdate
 from email.header import Header
 
 
-charset.add_charset('utf-8', charset.SHORTEST, None, 'utf-8')
+charset.add_charset('utf-8', charset.SHORTEST, charset.BASE64, 'utf-8')
 
 
 PY2 = sys.version_info[0] == 2
